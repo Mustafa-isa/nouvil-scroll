@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(#3b0442 ,#080d6d);
+
+  height: 100vh;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+font-size: 22px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header{
+
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+header ul li a{
+  padding: 7px 5px ;
+  margin: 2px;
+  border-radius: 5px;
+  transition: .3s ease;
+
+}
+header h2{
+  font-size: 40px;
+  text-transform: capitalize;
+}
+header ul li a:hover{
+  background-color: #fff;
+color:#080d6d;
+
+}
+.active a{
+  color: #080d6d;
+  background-color: #fff;
+
+}
+.barToggle{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* r4esponsive style */
+.ulResponsive {
+  z-index: 1000;
+  position: absolute;
+  width: 180px;
+  height: 100vh;
+  left: -100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  top: 0;
+  background: linear-gradient(45deg, #1d050554, #970a5c);
+  padding-top: 30px;
+  opacity: .4s;
+  border-radius: 3px;
+  border-right: 2px solid #fff;
+  transition: .3s ease;
+}
+.ulResponsive li{
+  display: block;
+  width: 100%;
+}
+.ulResponsive li a{
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ulResponsive.activeul{
+  left: 0;
+}
+/* style images */
+.main{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+.main img{
+  position: absolute;
+  height: 100%;
+width: 100%;
+object-fit: conver;
+
+}
+#moon{
+  mix-blend-mode:screen;
+}
+.main::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(to top ,#520233 ,transparent);
+}
+.content{
+
+  padding: 40px;
+  font: 18px;
+  text-transform: capitalize;
+  background: linear-gradient(#520233 ,transparent) !important;
+}
